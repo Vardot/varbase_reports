@@ -1,0 +1,11 @@
+name: 'Varbase Dashboard KPIs'
+description: 'Having some statistical KPIs data for the Dashboard.'
+type: module
+core: 8.x
+dependencies:
+  - better_exposed_filters
+  - node
+  - user
+  - views
+version: 8.x-6.x-dev
+package: Varbase
