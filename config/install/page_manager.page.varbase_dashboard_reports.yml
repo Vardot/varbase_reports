@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: varbase_dashboard_reports
+label: 'Varbase Dashboard Reports'
+description: 'Total Control administrative dashboard.'
+use_admin_theme: true
+path: /admin/dashboard/reports
+access_logic: and
+access_conditions: {  }
+parameters: {  }

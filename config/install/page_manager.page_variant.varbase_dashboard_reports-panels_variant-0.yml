@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.varbase_dashboard_reports
+    - views.view.varbase_dashboard_kpis_content
+    - views.view.varbase_dashboard_kpis_users
+  module:
+    - panels
+    - views
+id: varbase_dashboard_reports-panels_variant-0
+label: 'Varbase Dashboard Reports'
+variant: panels_variant
+variant_settings:
+  blocks:
+    fe2aa066-fa05-4008-bc1c-c0ce3e7358c9:
+      id: 'views_block:varbase_dashboard_kpis_users-varbase_dashboard_kpis_users_block'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: first
+      weight: 0
+      uuid: fe2aa066-fa05-4008-bc1c-c0ce3e7358c9
+      context_mapping: {  }
+    58327231-3598-4e71-bc73-c26ec1e916d0:
+      id: 'views_block:varbase_dashboard_kpis_content-varbase_dashboard_kpis_content_block'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: second
+      weight: 0
+      uuid: 58327231-3598-4e71-bc73-c26ec1e916d0
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 747e827c-2771-4f1f-97de-6d14d6f78f17
+  label: null
+  weight: 0
+  layout: layout_twocol
+  layout_settings: {  }
+  page_title: Reports
+  storage_type: page_manager
+  storage_id: varbase_dashboard_reports-panels_variant-0
+  builder: standard
+page: varbase_dashboard_reports
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
