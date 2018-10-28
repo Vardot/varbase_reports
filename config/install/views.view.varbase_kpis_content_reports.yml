@@ -83,10 +83,10 @@ display:
           row_class: ''
           default_row_class: true
           override: true
-          sticky: false
+          sticky: true
           caption: ''
-          summary: ''
-          description: ''
+          summary: 'What is this?'
+          description: 'Shows a list of created content, you can filter by date range and type of content in the website.'
           columns:
             created: created
             created_2: created_2
@@ -101,20 +101,20 @@ display:
               responsive: ''
             created_2:
               sortable: true
-              default_sort_order: desc
-              align: ''
+              default_sort_order: asc
+              align: views-align-left
               separator: ''
               empty_column: false
               responsive: ''
             created_1:
               sortable: true
-              default_sort_order: desc
-              align: ''
+              default_sort_order: asc
+              align: views-align-left
               separator: ''
               empty_column: false
               responsive: ''
-          default: '-1'
-          empty_table: false
+          default: created_2
+          empty_table: true
       row:
         type: fields
         options:
@@ -354,6 +354,51 @@ display:
           expose:
             operator: ''
           group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: type_op
+            label: 'Content type'
+            description: ''
+            use_operator: false
+            operator: type_op
+            identifier: type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              content_admin: '0'
+              seo_admin: '0'
+              site_admin: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
         created:
           id: created
           table: node_field_data
@@ -375,7 +420,7 @@ display:
             description: ''
             use_operator: false
             operator: created_op
-            identifier: created_from
+            identifier: content_created_from
             required: false
             remember: true
             multiple: false
@@ -426,9 +471,9 @@ display:
             description: ''
             use_operator: false
             operator: created_1_op
-            identifier: created_to
+            identifier: content_created_to
             required: false
-            remember: false
+            remember: true
             multiple: false
             remember_roles:
               authenticated: authenticated
@@ -456,51 +501,6 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: type_op
-            label: 'Content type'
-            description: ''
-            use_operator: false
-            operator: type_op
-            identifier: type
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              content_admin: '0'
-              seo_admin: '0'
-              site_admin: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
       sorts:
         created:
           id: created
@@ -509,17 +509,30 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
-            label: ''
+            label: 'Authored on'
           granularity: day
           entity_type: node
           entity_field: created
           plugin_id: date
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<div>\r\n   <p style=\"text-align: center;\">No new content for the selected date range.</p>\r\n</div>"
+            format: code_html
+          plugin_id: text
       relationships: {  }
       arguments: {  }
       display_extenders:
@@ -531,6 +544,8 @@ display:
           1: AND
       title: 'Created Content Report'
       use_ajax: true
+      show_admin_links: false
+      css_class: system-status-general-info__item-details
     cache_metadata:
       max-age: -1
       contexts:
@@ -544,13 +559,13 @@ display:
   varbase_kpis_content_reports_block:
     display_plugin: block
     id: varbase_kpis_content_reports_block
-    display_title: 'Varbase reports KPIs Content'
+    display_title: 'Varbase KPIs Content Reports'
     position: 1
     display_options:
       display_extenders:
         metatag_display_extender: {  }
       display_description: ''
-      block_category: reports
+      block_category: Reports
     cache_metadata:
       max-age: -1
       contexts:

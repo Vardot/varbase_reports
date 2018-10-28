@@ -1,0 +1,23 @@
+varbase_reports.reports_index:
+  title: 'Varbase Reports'
+  description: 'Varbase Reports.'
+  parent: system.admin_reports
+  route_name: varbase_reports.reports_index
+varbase_reports.general_reports:
+  title: 'Varbase general reports'
+  description: 'Varbase general reports.'
+  parent: varbase_reports.reports_index
+  route_name: varbase_reports.general_reports
+  weight: 1
+varbase_reports.varbase_users_reports:
+  title: 'Varbase users reports'
+  description: 'Varbase users reports.'
+  parent: varbase_reports.reports_index
+  route_name: varbase_reports.varbase_users_reports
+  weight: 2
+varbase_reports.varbase_content_reports:
+  title: 'Varbase content reports'
+  description: 'Varbase content reports.'
+  parent: varbase_reports.reports_index
+  route_name: varbase_reports.varbase_content_reports
+  weight: 3

@@ -3,11 +3,11 @@ status: true
 dependencies:
   module:
     - user
-id: varbase_reports
-label: 'Varbase Reports'
-description: 'Varbase Reports'
+id: varbase_users_reports
+label: 'Varbase Users Reports'
+description: 'Varbase Users Reports'
 use_admin_theme: true
-path: /admin/reports/varbase/reports
+path: /admin/reports/varbase/users
 access_logic: and
 access_conditions:
   -

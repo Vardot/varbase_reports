@@ -5,5 +5,12 @@ core: 8.x
 version: 8.x-6.x-dev
 package: Varbase
 dependencies:
-  - varbase_core:varbase_core
-  - views_date_format_sql:views_date_format_sql
+  - better_exposed_filters
+  - node
+  - page_manager
+  - panels
+  - user
+  - 'varbase_core:varbase_core'
+  - views
+  - views_date_format_sql
+  - 'views_date_format_sql:views_date_format_sql'

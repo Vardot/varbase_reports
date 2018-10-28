@@ -2,51 +2,39 @@ langcode: en
 status: true
 dependencies:
   config:
-    - page_manager.page.varbase_reports
-    - views.view.varbase_kpis_content_reports
+    - page_manager.page.varbase_users_reports
     - views.view.varbase_kpis_users_reports
   module:
     - panels
     - user
     - views
-id: varbase_reports-panels_variant-0
-label: 'Varbase reports Reports'
+id: varbase_users_reports-panels_variant-0
+label: 'Varbase Users Reports'
 variant: panels_variant
 variant_settings:
   blocks:
-    fe2aa066-fa05-4008-bc1c-c0ce3e7358c9:
+    5b63b131-a70b-455c-a962-8555dba0c800:
       id: 'views_block:varbase_kpis_users_reports-varbase_kpis_users_reports_block'
       label: ''
       provider: views
       label_display: visible
       views_label: ''
       items_per_page: none
-      region: first
+      region: content
       weight: 0
-      uuid: fe2aa066-fa05-4008-bc1c-c0ce3e7358c9
-      context_mapping: {  }
-    58327231-3598-4e71-bc73-c26ec1e916d0:
-      id: 'views_block:varbase_kpis_content_reports-varbase_kpis_content_reports_block'
-      label: ''
-      provider: views
-      label_display: visible
-      views_label: ''
-      items_per_page: none
-      region: second
-      weight: 0
-      uuid: 58327231-3598-4e71-bc73-c26ec1e916d0
+      uuid: 5b63b131-a70b-455c-a962-8555dba0c800
       context_mapping: {  }
   id: panels_variant
-  uuid: 747e827c-2771-4f1f-97de-6d14d6f78f17
+  uuid: 0dd83df8-18eb-430d-9fbe-8c3cee12837c
   label: null
   weight: 0
-  layout: layout_twocol
+  layout: layout_onecol
   layout_settings: {  }
-  page_title: Reports
+  page_title: 'Varbase Users Reports'
   storage_type: page_manager
-  storage_id: varbase_reports-panels_variant-0
+  storage_id: varbase_users_reports-panels_variant-0
   builder: standard
-page: varbase_reports
+page: varbase_users_reports
 weight: 0
 selection_criteria:
   -
