@@ -1,5 +1,5 @@
-name: 'Varbase Dashboard KPIs'
-description: 'Having some statistical KPIs data for the Dashboard.'
+name: 'Varbase Reports'
+description: 'Provide number of statistical reports.'
 type: module
 core: 8.x
 dependencies:

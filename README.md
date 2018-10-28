@@ -1,6 +1,7 @@
-# Varbase Dashboard KPIs
+# Varbase Reports
 
 --------------------------------------------------------------------------------
 
-* Varbase Dashboard KPIs Users
-* Varbase Dashboard KPIs Content
+Provide number of statistical reports.
+* Varbase KPIs Users Reports
+* Varbase KPIs Content Reports
