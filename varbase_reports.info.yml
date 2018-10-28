@@ -3,12 +3,7 @@ description: 'Provide number of statistical reports.'
 type: module
 core: 8.x
 dependencies:
-  - better_exposed_filters
-  - node
-  - page_manager
-  - panels
-  - user
-  - views
-  - views_date_format_sql
+  - varbase_core:varbase_core
+  - views_date_format_sql:views_date_format_sql
 version: 8.x-6.x-dev
 package: Varbase
