@@ -1,6 +1,6 @@
 {
-  "name": "drupal/varbase_editor",
-  "description": "Editor profile and settings to be used in most websites.",
+  "name": "vardot/varbase_reports",
+  "description": "Provides number of statistical reports.",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
   "minimum-stability": "dev",
@@ -12,8 +12,8 @@
     }
   ],
   "support": {
-    "issues": "http://drupal.org/project/issues/varbase_editor",
-    "source": "http://cgit.drupalcode.org/varbase_editor"
+    "issues": "https://github.com/Vardot/varbase_reports/issues",
+    "source": "https://github.com/Vardot/varbase_reports"
   },
   "repositories": {
     "drupal": {
