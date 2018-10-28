@@ -1,9 +1,9 @@
 name: 'Varbase Reports'
-description: 'Provide number of statistical reports.'
+description: 'Provides  number of statistical reports.'
 type: module
 core: 8.x
+version: 8.x-6.x-dev
+package: Varbase
 dependencies:
   - varbase_core:varbase_core
   - views_date_format_sql:views_date_format_sql
-version: 8.x-6.x-dev
-package: Varbase
