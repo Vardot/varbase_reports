@@ -5,12 +5,6 @@ varbase_reports.reports_index:
     _title: 'Varbase reports'
   requirements:
     _permission: 'access varbase reports'
-varbase_reports.general_reports:
-  path: '/admin/reports/varbase/reports'
-  defaults:
-    _title: 'Varbase reports'
-  requirements:
-    _permission: 'access varbase reports'
 varbase_reports.varbase_users_reports:
   path: '/admin/reports/varbase/users'
   defaults:
