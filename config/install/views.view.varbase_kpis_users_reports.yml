@@ -290,7 +290,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: 'admin/people?created_from={{ created_3 }}&created_to={{ created_3 }}'
+            path: 'admin/people?created_from={{ created_3 }}&created_to={{ created_3 |date_modify("+1 day")|date("m/d/Y") }}'
             absolute: false
             external: false
             replace_spaces: false

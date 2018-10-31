@@ -291,7 +291,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: 'admin/content?created_from={{ created }}&created_to={{ created }}'
+            path: 'admin/content?created_from={{ created }}&created_to={{ created |date_modify("+1 day")|date("m/d/Y") }}'
             absolute: false
             external: false
             replace_spaces: false
