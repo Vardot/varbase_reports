@@ -111,14 +111,14 @@ display:
               responsive: ''
             created_2:
               sortable: true
-              default_sort_order: asc
+              default_sort_order: desc
               align: views-align-left
               separator: ''
               empty_column: false
               responsive: ''
             created_1:
               sortable: true
-              default_sort_order: asc
+              default_sort_order: desc
               align: views-align-left
               separator: ''
               empty_column: false
@@ -291,7 +291,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: 'admin/content?status=All&type=All&title=&langcode=All&created_from={{ created }}&created_to={{ created }}'
+            path: 'admin/content?created_from={{ created }}&created_to={{ created }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -364,96 +364,6 @@ display:
           expose:
             operator: ''
           group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: type_op
-            label: 'Content type'
-            description: ''
-            use_operator: false
-            operator: type_op
-            identifier: type
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              content_admin: '0'
-              seo_admin: '0'
-              site_admin: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: langcode_op
-            label: Language
-            description: ''
-            use_operator: false
-            operator: langcode_op
-            identifier: langcode
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              content_admin: '0'
-              seo_admin: '0'
-              site_admin: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: langcode
-          plugin_id: language
         created:
           id: created
           table: node_field_data
@@ -598,7 +508,7 @@ display:
         groups:
           1: AND
       title: 'Created Content Report'
-      use_ajax: true
+      use_ajax: false
       show_admin_links: false
       css_class: system-status-general-info__item-details
     cache_metadata:
