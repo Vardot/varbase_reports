@@ -1,16 +1,14 @@
 name: 'Varbase Reports'
-description: 'Provides  number of statistical reports.'
+description: 'Provides number of statistical reports.'
 type: module
 core: 8.x
 version: 8.x-6.x-dev
 package: Varbase
 dependencies:
-  - better_exposed_filters
-  - node
-  - page_manager
-  - panels
-  - user
-  - 'varbase_core:varbase_core'
-  - views
-  - views_date_format_sql
-  - 'views_date_format_sql:views_date_format_sql'
+  - drupal:user
+  - drupal:node
+  - drupal:views
+  - better_exposed_filters:better_exposed_filters
+  - page_manager:page_manager
+  - panels:panels
+  - views_date_format_sql:views_date_format_sql

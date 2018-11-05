@@ -30,7 +30,9 @@
     "oomphinc/composer-installers-extender": "^1.1.2",
     "cweagans/composer-patches": "^1.6.4",
     "drupal/drupal-library-installer-plugin": "^0.3",
-    "drupal/varbase_core": "6.*",
+    "drupal/page_manager": "~4.0-beta3",
+    "drupal/panels": "~4.3",
+    "drupal/better_exposed_filters": "~3.0-alpha5",
     "drupal/views_date_format_sql": "3.x-dev#0e3b74768b89c823c1c4ef1f96d8ba9092b19ca9"
   },
   "extra": {
