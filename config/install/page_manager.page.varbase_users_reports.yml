@@ -13,7 +13,6 @@ access_conditions:
   -
     id: user_role
     roles:
-      site_admin: site_admin
       administrator: administrator
     negate: false
     context_mapping:

@@ -1,21 +1,11 @@
 langcode: en
 status: true
-dependencies:
-  module:
-    - user
+dependencies: {  }
 id: varbase_content_reports
 label: 'Varbase Content Reports'
 description: 'Varbase Content Reports'
 use_admin_theme: true
 path: /admin/reports/varbase/content
 access_logic: and
-access_conditions:
-  -
-    id: user_role
-    roles:
-      site_admin: site_admin
-      administrator: administrator
-    negate: false
-    context_mapping:
-      user: current_user
+access_conditions: {  }
 parameters: {  }

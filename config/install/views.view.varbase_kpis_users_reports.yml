@@ -25,8 +25,12 @@ display:
         options:
           perm: 'access varbase users reports'
       cache:
-        type: none
-        options: {  }
+        type: time
+        options:
+          results_lifespan: 60
+          results_lifespan_custom: 0
+          output_lifespan: 60
+          output_lifespan_custom: 0
       query:
         type: views_query
         options:
@@ -82,9 +86,26 @@ display:
                 placeholder_text: ''
           text_input_required_format: full_html
       pager:
-        type: none
+        type: full
         options:
+          items_per_page: 50
           offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       style:
         type: table
         options:
@@ -94,8 +115,8 @@ display:
           override: true
           sticky: true
           caption: ''
-          summary: 'What is this?'
-          description: 'Shows a list of new registered users, you can filter by date range and user roles.'
+          summary: ''
+          description: ''
           columns:
             created_3: created_3
             created_2: created_2
@@ -539,7 +560,7 @@ display:
       group_by: true
       show_admin_links: true
       title: 'Registered Users Report'
-      use_ajax: false
+      use_ajax: true
       filter_groups:
         operator: AND
         groups:

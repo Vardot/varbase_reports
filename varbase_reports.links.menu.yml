@@ -1,17 +1,17 @@
 varbase_reports.reports_index:
   title: 'Varbase reports'
-  description: 'Varbase reports.'
+  description: 'Provides number of statistical reports.'
   parent: system.admin_reports
   route_name: varbase_reports.reports_index
 varbase_reports.varbase_users_reports:
   title: 'Varbase users reports'
-  description: 'Varbase users reports.'
+  description: 'Provides users statistical reports.'
   parent: varbase_reports.reports_index
   route_name: varbase_reports.varbase_users_reports
   weight: 2
 varbase_reports.varbase_content_reports:
   title: 'Varbase content reports'
-  description: 'Varbase content reports.'
+  description: 'Provides content statistical reports.'
   parent: varbase_reports.reports_index
   route_name: varbase_reports.varbase_content_reports
   weight: 3

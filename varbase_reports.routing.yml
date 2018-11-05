@@ -4,7 +4,7 @@ varbase_reports.reports_index:
     _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
     _title: 'Varbase reports'
   requirements:
-    _permission: 'access varbase reports'
+    _permission: 'access site reports'
 varbase_reports.varbase_users_reports:
   path: '/admin/reports/varbase/users'
   defaults:

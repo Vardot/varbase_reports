@@ -1,6 +1,3 @@
-access varbase reports:
-  title: 'Access Varbase reports'
-  description: 'Access the main Varbase reports page.'
 access varbase users reports:
   title: 'Access Varbase users reports'
   description: 'Access the Varbase users reports page.'
