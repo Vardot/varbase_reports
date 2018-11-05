@@ -1,6 +1,6 @@
 varbase_reports.reports_index:
-  title: 'Varbase Reports'
-  description: 'Varbase Reports.'
+  title: 'Varbase reports'
+  description: 'Varbase reports.'
   parent: system.admin_reports
   route_name: varbase_reports.reports_index
 varbase_reports.varbase_users_reports:
