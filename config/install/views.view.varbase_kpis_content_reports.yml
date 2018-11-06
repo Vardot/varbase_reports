@@ -581,8 +581,8 @@ display:
         use_ajax: false
       filename: '[site:name]-created-content-report.csv'
       displays:
-        varbase_kpis_content_created_reports_block: varbase_kpis_content_created_reports_block
-        varbase_kpis_content_created_reports_page: varbase_kpis_content_created_reports_page
+        created_content_report_block: created_content_report_block
+        created_content_report_page: created_content_report_page
         default: '0'
       style:
         type: data_export

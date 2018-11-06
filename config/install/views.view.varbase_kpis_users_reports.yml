@@ -638,8 +638,8 @@ display:
               manager: ''
               company: ''
       displays:
-        varbase_kpis_users_reports_block: varbase_kpis_users_reports_block
-        varbase_kpis_users_reports_page: varbase_kpis_users_reports_page
+        registered_users_report_block: registered_users_report_block
+        registered_users_report_page: registered_users_report_page
         default: '0'
     cache_metadata:
       max-age: -1
