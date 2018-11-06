@@ -3,13 +3,17 @@ status: true
 dependencies:
   module:
     - better_exposed_filters
+    - csv_serialization
+    - rest
+    - serialization
     - user
+    - views_data_export
     - views_date_format_sql
 id: varbase_kpis_users_reports
 label: 'Varbase KPIs Users Reports'
 module: views
-description: ''
-tag: ''
+description: 'Provides a list of statistical reports about users as a page, block and be able to export data.'
+tag: Reports
 base_table: users_field_data
 base_field: uid
 core: 8.x
@@ -575,16 +579,90 @@ display:
         - url.query_args
         - user.permissions
       tags: {  }
-  varbase_kpis_users_reports_block:
+  registered_users_report_block:
     display_plugin: block
-    id: varbase_kpis_users_reports_block
-    display_title: 'Varbase KPIs Users Reports'
+    id: registered_users_report_block
+    display_title: 'Registered Users Block'
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      display_description: 'Provides a list of statistical reports and registered users in a block.'
+      block_category: 'Varbase Reports'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user.permissions
+      tags: {  }
+  registered_users_report_data_export:
+    display_plugin: data_export
+    id: registered_users_report_data_export
+    display_title: 'Registered  Users Data export'
+    position: 3
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      display_description: 'Provides a list of statistical reports and registered users in a CSV data export.'
+      pager:
+        type: none
+        options:
+          offset: 0
+      path: admin/reports/varbase/users/registered/export
+      filename: '[site:name]-registered-users-report.csv'
+      style:
+        type: data_export
+        options:
+          formats:
+            csv: csv
+          csv_settings:
+            delimiter: ','
+            enclosure: '"'
+            escape_char: \
+            strip_tags: true
+            trim: true
+            encoding: utf8
+          xls_settings:
+            xls_format: Excel2007
+            metadata:
+              creator: ''
+              last_modified_by: ''
+              title: ''
+              description: ''
+              subject: ''
+              keywords: ''
+              category: ''
+              manager: ''
+              company: ''
+      displays:
+        varbase_kpis_users_reports_block: varbase_kpis_users_reports_block
+        varbase_kpis_users_reports_page: varbase_kpis_users_reports_page
+        default: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - url
+        - user.permissions
+      tags: {  }
+  registered_users_report_page:
+    display_plugin: page
+    id: registered_users_report_page
+    display_title: 'Registered Users Page'
     position: 1
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      display_description: ''
-      block_category: 'Varbase Reports'
+      display_description: 'Provides a list of statistical reports and registered users in a page.'
+      path: admin/reports/varbase/user
+      use_ajax: false
+      defaults:
+        use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:

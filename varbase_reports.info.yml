@@ -9,6 +9,7 @@ dependencies:
   - drupal:node
   - drupal:views
   - better_exposed_filters:better_exposed_filters
-  - page_manager:page_manager
-  - panels:panels
   - views_date_format_sql:views_date_format_sql
+  - csv_serialization:csv_serialization
+  - views_data_export:views_data_export
+
