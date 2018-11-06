@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.admin
   module:
     - better_exposed_filters
     - csv_serialization
@@ -663,6 +665,15 @@ display:
       use_ajax: false
       defaults:
         use_ajax: false
+      menu:
+        type: normal
+        title: 'Varbase users reports'
+        description: 'Statistical reports about users.'
+        expanded: false
+        parent: varbase_reports.reports_index
+        weight: 1
+        context: '0'
+        menu_name: admin
     cache_metadata:
       max-age: -1
       contexts:

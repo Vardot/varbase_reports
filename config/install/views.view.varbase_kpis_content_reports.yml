@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.admin
   module:
     - better_exposed_filters
     - csv_serialization
@@ -636,14 +638,19 @@ display:
       defaults:
         use_ajax: false
       menu:
-        type: none
-        title: ''
-        description: ''
+        type: normal
+        title: 'Varbase content reports'
+        description: 'Statistical reports about content.'
         expanded: false
-        parent: ''
-        weight: 0
+        parent: varbase_reports.reports_index
+        weight: 20
         context: '0'
-        menu_name: main
+        menu_name: admin
+      tab_options:
+        type: normal
+        title: ' Varbase content reports'
+        description: 'Statistical reports about content.'
+        weight: 0
     cache_metadata:
       max-age: -1
       contexts:
