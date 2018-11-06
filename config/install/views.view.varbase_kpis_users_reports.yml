@@ -659,7 +659,7 @@ display:
       display_extenders:
         metatag_display_extender: {  }
       display_description: 'Provides a list of statistical reports and registered users in a page.'
-      path: admin/reports/varbase/user
+      path: admin/reports/varbase/users/registered
       use_ajax: false
       defaults:
         use_ajax: false
