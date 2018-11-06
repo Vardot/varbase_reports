@@ -5,13 +5,25 @@ varbase_reports.reports_index:
   route_name: varbase_reports.reports_index
 varbase_reports.varbase_users_reports:
   title: 'Varbase users reports'
-  description: 'Provides users statistical reports.'
+  description: 'Statistical reports about users.'
   parent: varbase_reports.reports_index
   route_name: varbase_reports.varbase_users_reports
-  weight: 2
+  weight: 1
+varbase_reports.registered_users_report:
+  title: 'Registered users report'
+  description: 'Statistical reports about registered users.'
+  parent: varbase_reports.varbase_users_reports
+  route_name: varbase_reports.registered_users_report
+  weight: 1
 varbase_reports.varbase_content_reports:
   title: 'Varbase content reports'
-  description: 'Provides content statistical reports.'
+  description: 'Statistical reports about content.'
   parent: varbase_reports.reports_index
   route_name: varbase_reports.varbase_content_reports
-  weight: 3
+  weight: 2
+varbase_reports.created_content_report:
+  title: 'Created content report'
+  description: 'Statistical reports about created content.'
+  parent: varbase_reports.varbase_content_reports
+  route_name: varbase_reports.created_content_report
+  weight: 1

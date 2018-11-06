@@ -1,4 +1,3 @@
-# Root Varbase reports index.
 varbase_reports.reports_index:
   path: '/admin/reports/varbase'
   defaults:
@@ -6,23 +5,19 @@ varbase_reports.reports_index:
     _title: 'Varbase reports'
   requirements:
     _permission: 'access site reports'
-
-# Varbase users reports.
-varbase_reports.varbase_users_reports::
+varbase_reports.varbase_users_reports:
   path: '/admin/reports/varbase/users'
   defaults:
     _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
     _title: 'Varbase users reports'
   requirements:
     _permission: 'access varbase users reports'
-varbase_reports.registerd_users_report:
-  path: '/admin/reports/varbase/users/registerd'
+varbase_reports.registered_users_report:
+  path: '/admin/reports/varbase/users/registered'
   defaults:
     _title: 'Registared users reports'
   requirements:
     _permission: 'access varbase users reports'
-
-# Varbase content reports.
 varbase_reports.varbase_content_reports:
   path: '/admin/reports/varbase/content'
   defaults:
