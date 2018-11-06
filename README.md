@@ -11,5 +11,5 @@ Provides number of statistical reports.
 
 To install the most recent stable release you could run this command:
 ```
-composer require vardot/varbase_reports
+composer require drupal/varbase_reports
 ```

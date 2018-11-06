@@ -1,5 +1,5 @@
 {
-  "name": "vardot/varbase_reports",
+  "name": "drupal/varbase_reports",
   "description": "Provides number of statistical reports.",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
@@ -12,8 +12,8 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/Vardot/varbase_reports/issues",
-    "source": "https://github.com/Vardot/varbase_reports"
+    "issues": "https://www.drupal.org/project/issues/varbase_reports",
+    "source": "https://www.drupal.org/project/varbase_reports"
   },
   "repositories": {
     "drupal": {
