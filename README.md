@@ -34,4 +34,3 @@ composer require drupal/varbase_reports
 ---
 
 This module is sponsored and developed by [Vardot](http://www.vardot.com/)
-
