@@ -1,9 +1,6 @@
 name: 'Varbase Reports'
 description: 'Provides number of statistical reports.'
 type: module
-core: 8.x
-version: 8.x-6.x-dev
-project: varbase_reports
 package: Varbase
 core_version_requirement: ^8 || ^9
 dependencies:
