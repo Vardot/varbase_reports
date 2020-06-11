@@ -26,10 +26,10 @@
     "oomphinc/composer-installers-extender": "~1.0",
     "cweagans/composer-patches": "~1.0",
     "drupal/drupal-library-installer-plugin": "^0.3",
-    "drupal/core": "^8.8.0 || ~9.0.0",
+    "drupal/core": "^8 || ^9 || ~10.0.0",
     "drupal/better_exposed_filters": "~4.0",
     "drupal/views_date_format_sql": "~3.0",
-    "drupal/csv_serialization": "~1.0",
+    "drupal/csv_serialization": "~2.0",
     "drupal/views_data_export": "~1.0"
   },
   "extra": {
