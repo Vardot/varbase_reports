@@ -1,5 +1,5 @@
 varbase_reports.reports_index:
-  title: 'Varbase reports'
-  description: 'Provides number of statistical reports.'
+  title: "Varbase reports"
+  description: "Provides number of statistical reports."
   parent: system.admin_reports
   route_name: varbase_reports.reports_index

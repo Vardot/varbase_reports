@@ -13,9 +13,9 @@ dependencies:
     - views_data_export
     - views_date_format_sql
 id: varbase_kpis_content_reports
-label: 'Varbase KPIs Content reports'
+label: "Varbase KPIs Content reports"
 module: views
-description: 'Provides a list of statistical reports about content as a page, block and be able to export data.'
+description: "Provides a list of statistical reports about content as a page, block and be able to export data."
 tag: Reports
 base_table: node_field_data
 base_field: nid
@@ -29,7 +29,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access varbase content reports'
+          perm: "access varbase content reports"
       cache:
         type: time
         options:
@@ -43,19 +43,19 @@ display:
           disable_sql_rewrite: false
           distinct: false
           replica: false
-          query_comment: ''
-          query_tags: {  }
+          query_comment: ""
+          query_tags: {}
       exposed_form:
         type: bef
         options:
           submit_button: Apply
           reset_button: true
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: "Sort by"
           expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required: "Select any filter and click on Apply to see results"
           text_input_required_format: full_html
           bef:
             general:
@@ -65,19 +65,19 @@ display:
               autosubmit_hide: false
               input_required: false
               allow_secondary: false
-              secondary_label: 'Advanced options'
+              secondary_label: "Advanced options"
               secondary_open: false
             filter:
               created:
                 plugin_id: bef_datepicker
                 advanced:
-                  placeholder_text: ''
+                  placeholder_text: ""
                   collapsible: false
                   is_secondary: false
               created_1:
                 plugin_id: bef_datepicker
                 advanced:
-                  placeholder_text: ''
+                  placeholder_text: ""
                   collapsible: false
                   is_secondary: false
             type:
@@ -87,7 +87,7 @@ display:
                 bef_collapsible: false
                 is_secondary: false
                 rewrite:
-                  filter_rewrite_values: ''
+                  filter_rewrite_values: ""
             langcode:
               bef_format: default
               more_options:
@@ -95,17 +95,17 @@ display:
                 bef_collapsible: false
                 is_secondary: false
                 rewrite:
-                  filter_rewrite_values: ''
+                  filter_rewrite_values: ""
             created:
               bef_format: bef_datepicker
               more_options:
                 is_secondary: false
-                placeholder_text: ''
+                placeholder_text: ""
             created_1:
               bef_format: bef_datepicker
               more_options:
                 is_secondary: false
-                placeholder_text: ''
+                placeholder_text: ""
           input_required: false
       pager:
         type: full
@@ -115,30 +115,30 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: "‹ Previous"
+            next: "Next ›"
+            first: "« First"
+            last: "Last »"
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_label: "Items per page"
+            items_per_page_options: "5, 10, 25, 50"
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: "- All -"
             offset: false
             offset_label: Offset
           quantity: 9
       style:
         type: table
         options:
-          grouping: {  }
-          row_class: ''
+          grouping: {}
+          row_class: ""
           default_row_class: true
           override: true
           sticky: true
-          caption: ''
-          summary: ''
-          description: ''
+          caption: ""
+          summary: ""
+          description: ""
           columns:
             created: created
             created_2: created_2
@@ -147,31 +147,31 @@ display:
             created:
               sortable: false
               default_sort_order: asc
-              align: ''
-              separator: ''
+              align: ""
+              separator: ""
               empty_column: false
-              responsive: ''
+              responsive: ""
             created_2:
               sortable: true
               default_sort_order: desc
               align: views-align-left
-              separator: ''
+              separator: ""
               empty_column: false
-              responsive: ''
+              responsive: ""
             created_1:
               sortable: true
               default_sort_order: desc
               align: views-align-left
-              separator: ''
+              separator: ""
               empty_column: false
-              responsive: ''
+              responsive: ""
           default: created_2
           empty_table: true
       row:
         type: fields
         options:
-          inline: {  }
-          separator: ''
+          inline: {}
+          separator: ""
           hide_empty: false
           default_field_elements: true
       fields:
@@ -181,45 +181,45 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
-          label: 'Date picker created date format'
+          admin_label: ""
+          label: "Date picker created date format"
           exclude: true
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -228,7 +228,7 @@ display:
           settings:
             date_format: custom
             custom_date_format: m/d/Y
-            timezone: ''
+            timezone: ""
           group_column: value
           group_columns:
             value: value
@@ -238,7 +238,7 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: 0
           format_date_sql: 1
           entity_type: node
@@ -250,45 +250,45 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
-          label: 'Created date'
+          admin_label: ""
+          label: "Created date"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -296,8 +296,8 @@ display:
           type: timestamp
           settings:
             date_format: html_date
-            custom_date_format: 'd M Y'
-            timezone: ''
+            custom_date_format: "d M Y"
+            timezone: ""
           group_column: value
           group_columns:
             value: value
@@ -307,7 +307,7 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           format_date_sql: 1
           set_precision: false
@@ -315,8 +315,8 @@ display:
           decimal: .
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           entity_type: node
           entity_field: created
           plugin_id: field
@@ -326,12 +326,12 @@ display:
           field: created
           relationship: none
           group_type: count
-          admin_label: 'Number of content created'
-          label: 'Number of content created'
+          admin_label: "Number of content created"
+          label: "Number of content created"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: true
             path: 'admin/content?created_from={{ created }}&created_to={{ created |date_modify("+1 day")|date("m/d/Y") }}'
             absolute: false
@@ -339,49 +339,49 @@ display:
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           click_sort_column: value
           type: timestamp
           settings:
             date_format: medium
-            custom_date_format: ''
-            timezone: ''
+            custom_date_format: ""
+            timezone: ""
           group_column: null
           group_columns: null
           group_rows: true
@@ -396,7 +396,7 @@ display:
           plugin_id: field
       filters:
         status:
-          value: '1'
+          value: "1"
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -404,9 +404,9 @@ display:
           entity_field: status
           id: status
           expose:
-            operator: ''
+            operator: ""
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
           group: 1
         created:
           id: created
@@ -414,19 +414,19 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: 'Created date (from)'
-          operator: '>='
+          admin_label: "Created date (from)"
+          operator: ">="
           value:
-            min: ''
-            max: ''
-            value: ''
+            min: ""
+            max: ""
+            value: ""
             type: date
           group: 1
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Created date (from)'
-            description: ''
+            label: "Created date (from)"
+            description: ""
             use_operator: false
             operator: created_op
             identifier: content_created_from
@@ -435,29 +435,29 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              content_admin: '0'
-              seo_admin: '0'
-              site_admin: '0'
-              administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
+              anonymous: "0"
+              editor: "0"
+              content_admin: "0"
+              seo_admin: "0"
+              site_admin: "0"
+              administrator: "0"
+            placeholder: ""
+            min_placeholder: ""
+            max_placeholder: ""
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: ""
+            description: ""
+            identifier: ""
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+            default_group_multiple: {}
+            group_items: {}
           entity_type: node
           entity_field: created
           plugin_id: date
@@ -467,19 +467,19 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: 'Created date (to)'
-          operator: '<='
+          admin_label: "Created date (to)"
+          operator: "<="
           value:
-            min: ''
-            max: ''
-            value: ''
+            min: ""
+            max: ""
+            value: ""
             type: date
           group: 1
           exposed: true
           expose:
             operator_id: created_1_op
-            label: 'Created date (to)'
-            description: ''
+            label: "Created date (to)"
+            description: ""
             use_operator: false
             operator: created_1_op
             identifier: content_created_to
@@ -488,29 +488,29 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              content_admin: '0'
-              seo_admin: '0'
-              site_admin: '0'
-              administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
+              anonymous: "0"
+              editor: "0"
+              content_admin: "0"
+              seo_admin: "0"
+              site_admin: "0"
+              administrator: "0"
+            placeholder: ""
+            min_placeholder: ""
+            max_placeholder: ""
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: ""
+            description: ""
+            identifier: ""
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+            default_group_multiple: {}
+            group_items: {}
           entity_type: node
           entity_field: created
           plugin_id: date
@@ -521,17 +521,17 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: false
           expose:
-            label: 'Authored on'
+            label: "Authored on"
           granularity: day
           entity_type: node
           entity_field: created
           plugin_id: date
-      header: {  }
-      footer: {  }
+      header: {}
+      footer: {}
       empty:
         area:
           id: area
@@ -539,81 +539,81 @@ display:
           field: area
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           empty: true
           tokenize: false
           content:
             value: "<div>\r\n   <p style=\"text-align: center;\">No new content for the selected date range.</p>\r\n</div>"
             format: code_html
           plugin_id: text
-      relationships: {  }
-      arguments: {  }
+      relationships: {}
+      arguments: {}
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender: {}
       group_by: true
       filter_groups:
         operator: AND
         groups:
           1: AND
-      title: 'Created Content Report'
+      title: "Created Content Report"
       use_ajax: true
       show_admin_links: false
       css_class: system-status-general-info__item-details
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - url
         - url.query_args
-        - 'user.node_grants:view'
+        - "user.node_grants:view"
         - user.permissions
-      tags: {  }
+      tags: {}
   created_content_report_block:
     display_plugin: block
     id: created_content_report_block
-    display_title: 'Created Content Block'
+    display_title: "Created Content Block"
     position: 2
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
-      display_description: 'Provides a list of statistical reports about created content in a block.'
-      block_category: 'Varbase Reports'
+        metatag_display_extender: {}
+      display_description: "Provides a list of statistical reports about created content in a block."
+      block_category: "Varbase Reports"
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - url
         - url.query_args
-        - 'user.node_grants:view'
+        - "user.node_grants:view"
         - user.permissions
-      tags: {  }
+      tags: {}
   created_content_report_data_export:
     display_plugin: data_export
     id: created_content_report_data_export
-    display_title: 'Created Content Data export'
+    display_title: "Created Content Data export"
     position: 3
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
-      display_description: 'Provides a list of statistical reports about created content in a CSV data exported file.'
+        metatag_display_extender: {}
+      display_description: "Provides a list of statistical reports about created content in a CSV data exported file."
       path: admin/reports/varbase/content/created/export
       use_ajax: false
       defaults:
         use_ajax: false
-      filename: '[site:name]-created-content-report.csv'
+      filename: "[site:name]-created-content-report.csv"
       displays:
         created_content_report_block: created_content_report_block
         created_content_report_page: created_content_report_page
-        default: '0'
+        default: "0"
       style:
         type: data_export
         options:
           formats:
             csv: csv
           csv_settings:
-            delimiter: ','
+            delimiter: ","
             enclosure: '"'
             escape_char: \
             strip_tags: true
@@ -622,15 +622,15 @@ display:
           xls_settings:
             xls_format: Excel2007
             metadata:
-              creator: ''
-              last_modified_by: ''
-              title: ''
-              description: ''
-              subject: ''
-              keywords: ''
-              category: ''
-              manager: ''
-              company: ''
+              creator: ""
+              last_modified_by: ""
+              title: ""
+              description: ""
+              subject: ""
+              keywords: ""
+              category: ""
+              manager: ""
+              company: ""
       pager:
         type: none
         options:
@@ -638,47 +638,47 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - request_format
         - url
-        - 'user.node_grants:view'
+        - "user.node_grants:view"
         - user.permissions
-      tags: {  }
+      tags: {}
   created_content_report_page:
     display_plugin: page
     id: created_content_report_page
-    display_title: 'Created Content Page'
+    display_title: "Created Content Page"
     position: 1
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
-      display_description: 'Provides a list of statistical reports about created content in a page.'
+        metatag_display_extender: {}
+      display_description: "Provides a list of statistical reports about created content in a page."
       path: admin/reports/varbase/content/created
       use_ajax: false
       defaults:
         use_ajax: false
       menu:
         type: normal
-        title: 'Varbase content reports'
-        description: 'Statistical reports about content.'
+        title: "Varbase content reports"
+        description: "Statistical reports about content."
         expanded: false
         parent: varbase_reports.reports_index
         weight: 20
-        context: '0'
+        context: "0"
         menu_name: admin
       tab_options:
         type: normal
-        title: ' Varbase content reports'
-        description: 'Statistical reports about content.'
+        title: " Varbase content reports"
+        description: "Statistical reports about content."
         weight: 0
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - url
         - url.query_args
-        - 'user.node_grants:view'
+        - "user.node_grants:view"
         - user.permissions
-      tags: {  }
+      tags: {}
