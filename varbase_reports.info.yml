@@ -1,5 +1,5 @@
-name: 'Varbase Reports'
-description: 'Provides number of statistical reports.'
+name: "Varbase Reports"
+description: "Provides number of statistical reports."
 type: module
 package: Varbase
 core_version_requirement: ^8 || ^9

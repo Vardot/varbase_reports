@@ -1,6 +1,6 @@
 {
   "name": "drupal/varbase_reports",
-  "description": "Provides number of statistical reports.",
+  "description": "Provides a list of statistical reports. Targeted about users, content, blocks. And be able to export data.",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
   "minimum-stability": "dev",
