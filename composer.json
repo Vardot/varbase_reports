@@ -30,7 +30,7 @@
     "oomphinc/composer-installers-extender": "~2.0",
     "cweagans/composer-patches": "~1.0",
     "drupal/core": "~9.0 || ~10.0",
-    "drupal/better_exposed_filters": "~5.0",
+    "drupal/better_exposed_filters": "~6.0",
     "drupal/views_date_format_sql": "~3.0",
     "drupal/csv_serialization": "~2.0",
     "drupal/views_data_export": "~1.0"
