@@ -2,7 +2,7 @@ name: "Varbase Reports"
 description: "Provides number of statistical reports."
 type: module
 package: Varbase
-core_version_requirement: ^9 || ^10
+core_version_requirement: ~9.5.0 || ~10.1.0
 configure: varbase_reports.reports_index
 dependencies:
   - drupal:user
