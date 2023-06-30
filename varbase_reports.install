@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update for Varbase Reports module.
+ */
+
+use Vardot\Installer\ModuleInstallerFactory;
+
+/**
+ * Implements hook_install().
+ */
+function varbase_reports_install() {
+
+  // Processor for install: in varbase_reports.info.yml file using ModuleInstallerFactory.
+  // ---------------------------------------------------------------------------.
+  ModuleInstallerFactory::installList('varbase_reports');
+
+  // Add permissions.
+  ModuleInstallerFactory::addPermissions('varbase_reports');
+
+}
