@@ -4,7 +4,7 @@ Provides a list of statistical reports about users, content as a page, block
  and be able to export data.
 
 This is a [Varbase](https://www.drupal.org/project/varbase) feature.
-But you can use it with Drupal 8 core.
+But you can use it with Drupal core.
 
 
 ## Features:
