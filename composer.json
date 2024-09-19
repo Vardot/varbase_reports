@@ -26,7 +26,7 @@
     "vardot/varbase-patches": "~9 || ~10 || ~11",
     "vardot/entity-definition-update-manager": "~1",
     "vardot/module-installer-factory": "~1",
-    "drupal/better_exposed_filters": "~6",
+    "drupal/better_exposed_filters": "~6 || ~7",
     "drupal/views_date_format_sql": "~3",
     "drupal/csv_serialization": "~3 || ~4",
     "drupal/views_data_export": "~1"
