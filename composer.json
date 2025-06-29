@@ -3,7 +3,6 @@
   "description": "Provides a list of statistical reports. Targeted about users, content, blocks. And be able to export data.",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
-  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Vardot",
@@ -14,12 +13,6 @@
   "support": {
     "issues": "https://www.drupal.org/project/issues/varbase_reports",
     "source": "https://www.drupal.org/project/varbase_reports"
-  },
-  "repositories": {
-    "drupal": {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    }
   },
   "require": {
     "drupal/core": "~10.5.0 || ~11.2.0",
