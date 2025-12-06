@@ -15,7 +15,7 @@
     "source": "https://www.drupal.org/project/varbase_reports"
   },
   "require": {
-    "drupal/core": "~10.5.0 || ~11.2.0",
+    "drupal/core": "~10.6.0 || ~11.3.0",
     "vardot/varbase-patches": "~9 || ~10",
     "drupal/better_exposed_filters": "~6 || ~7",
     "drupal/views_date_format_sql": "~3",
