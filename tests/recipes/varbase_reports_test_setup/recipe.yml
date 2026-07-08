@@ -1,0 +1,45 @@
+name: 'Varbase Reports Test Setup'
+description: 'Creates the Varbase user roles the Varbase Reports views reference (BEF remember-roles) so the module config installs on a Standard profile site. Applied before the main test recipe.'
+type: 'Testing'
+config:
+  actions:
+    user.role.content_admin:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        id: content_admin
+        label: 'Content admin'
+        weight: 3
+        is_admin: false
+        permissions: {  }
+    user.role.site_admin:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        id: site_admin
+        label: 'Site admin'
+        weight: 4
+        is_admin: false
+        permissions: {  }
+    user.role.editor:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        id: editor
+        label: 'Editor'
+        weight: 2
+        is_admin: false
+        permissions: {  }
+    user.role.seo_admin:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        id: seo_admin
+        label: 'SEO admin'
+        weight: 5
+        is_admin: false
+        permissions: {  }

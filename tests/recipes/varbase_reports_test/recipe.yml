@@ -1,0 +1,30 @@
+name: 'Varbase Reports Test'
+description: 'Provisions a Standard site for the Varbase Reports webship-js browser tests: installs Varbase Reports (with its Views + BEF + data-export dependencies), ensures the Basic page node type, and seeds a few published content nodes and extra users so the content and users KPI reports show real rows.'
+type: 'Testing'
+install:
+  - node
+  - user
+  - serialization
+  - rest
+  - better_exposed_filters
+  - views_date_format_sql
+  - csv_serialization
+  - views_data_export
+  - varbase_reports
+config:
+  import:
+    varbase_reports: '*'
+  actions:
+    node.type.page:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: 'Basic page'
+        type: page
+        description: 'Basic page for the Varbase Reports test content.'
+        help: 'Basic page content for the Varbase Reports test site.'
+        new_revision: true
+        preview_mode: 1
+        display_submitted: false
+content: {  }

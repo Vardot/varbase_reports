@@ -1,0 +1,14 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: bb222222-0002-4a1b-8c2d-000000000002
+  default_langcode: en
+default:
+  name:
+    - value: 'reportuser2'
+  mail:
+    - value: 'reportuser2@example.test'
+  status:
+    - value: true
+  created:
+    - value: 1751100000
