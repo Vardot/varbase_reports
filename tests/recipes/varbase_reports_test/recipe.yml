@@ -1,5 +1,5 @@
 name: 'Varbase Reports Test'
-description: 'Provisions a Standard site for the Varbase Reports webship-js browser tests: installs Varbase Reports (with its Views + BEF + data-export dependencies), ensures the Basic page node type, and seeds a few published content nodes and extra users so the content and users KPI reports show real rows.'
+description: 'Provisions a Standard site for the Varbase Reports varbase-e2e browser tests: installs Varbase Reports (with its Views + BEF + data-export dependencies), ensures the Basic page node type, and seeds a few published content nodes and extra users so the content and users KPI reports show real rows.'
 type: 'Testing'
 install:
   - node
